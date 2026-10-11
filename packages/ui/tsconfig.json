@@ -1,0 +1,11 @@
+{
+  "extends": "../../tooling/tsconfig/react.json",
+  "compilerOptions": {
+    "rootDir": ".",
+    "noEmit": true,
+    "tsBuildInfoFile": "./.tsbuildinfo",
+    "types": []
+  },
+  "include": ["src", "tests", "vitest.config.ts", "eslint.config.mjs", "*.ts", "*.mjs", "*.js"],
+  "exclude": ["node_modules", "dist", ".turbo", "coverage"]
+}

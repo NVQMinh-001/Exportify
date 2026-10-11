@@ -1,0 +1,29 @@
+{
+  "name": "@exportify/core-engine",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Pure TypeScript engine for renaming, foldering, and pipeline coordination. No DOM dependencies.",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./rename": "./src/rename/index.ts",
+    "./folder": "./src/folder/index.ts",
+    "./types": "./src/types/index.ts"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json --noEmit",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "clean": "rimraf dist .turbo coverage .tsbuildinfo"
+  },
+  "devDependencies": {
+    "@exportify/eslint-config": "workspace:*",
+    "eslint": "^9.17.0",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.8"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "@exportify/vite-plugins",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Shared Vite plugins and config helpers for Exportify apps (Figma plugin + MV3 extension).",
+  "type": "module",
+  "main": "./plugin-figma.mjs",
+  "types": "./types.d.ts",
+  "exports": {
+    "./plugin-figma": {
+      "types": "./types.d.ts",
+      "import": "./plugin-figma.mjs"
+    },
+    "./plugin-mv3": {
+      "types": "./types.d.ts",
+      "import": "./plugin-mv3.mjs"
+    }
+  },
+  "files": [
+    "plugin-figma.mjs",
+    "plugin-mv3.mjs",
+    "types.d.ts"
+  ],
+  "scripts": {
+    "lint": "echo \"(vite-plugins has no source to lint)\" && exit 0",
+    "typecheck": "echo \"(vite-plugins has no source to typecheck)\" && exit 0",
+    "test": "echo \"(vite-plugins has no tests)\" && exit 0",
+    "build": "echo \"(vite-plugins has no build step)\" && exit 0",
+    "clean": "rimraf node_modules .turbo"
+  },
+  "peerDependencies": {
+    "vite": "^5.4.11"
+  },
+  "devDependencies": {
+    "rimraf": "^6.0.1",
+    "vite": "^5.4.11"
+  }
+}

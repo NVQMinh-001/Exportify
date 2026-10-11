@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Exportify",
+  "version": "0.0.0",
+  "description": "Batch-export and package design assets directly in the browser.",
+  "action": {
+    "default_popup": "src/popup/index.html",
+    "default_title": "Exportify"
+  },
+  "background": {
+    "service_worker": "background/service-worker.js",
+    "type": "module"
+  },
+  "options_page": "src/options/index.html",
+  "permissions": ["storage", "downloads", "offscreen"],
+  "host_permissions": []
+}

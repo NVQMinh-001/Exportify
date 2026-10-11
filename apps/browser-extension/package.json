@@ -1,0 +1,39 @@
+{
+  "name": "@exportify/browser-extension",
+  "version": "0.0.0",
+  "private": true,
+  "description": "MV3 browser extension shell for Exportify. Popup, options, content script, service worker, and offscreen document.",
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run --passWithNoTests",
+    "clean": "rimraf dist .vite .turbo coverage"
+  },
+  "dependencies": {
+    "@exportify/compression": "workspace:*",
+    "@exportify/core-engine": "workspace:*",
+    "@exportify/packer": "workspace:*",
+    "@exportify/presets": "workspace:*",
+    "@exportify/transport": "workspace:*",
+    "@exportify/ui": "workspace:*",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@exportify/eslint-config": "workspace:*",
+    "@exportify/vite-plugins": "workspace:*",
+    "@types/chrome": "^0.0.287",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.17.0",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11",
+    "vitest": "^2.1.8"
+  }
+}

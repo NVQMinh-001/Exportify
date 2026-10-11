@@ -1,0 +1,1 @@
+export const MATRIX_COMPRESSOR_VERSION = '0.0.0';

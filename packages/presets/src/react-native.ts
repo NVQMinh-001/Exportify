@@ -1,0 +1,1 @@
+export const REACT_NATIVE_PRESET_VERSION = '0.0.0';

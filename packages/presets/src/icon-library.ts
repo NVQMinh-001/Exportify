@@ -1,0 +1,1 @@
+export const ICON_LIBRARY_PRESET_VERSION = '0.0.0';
